@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ViewState } from './types';
-import { ALPHABET_DATA, NUMBER_DATA, COLOR_SHAPE_DATA, HIJAIYAH_DATA, ASMAUL_HUSNA_DATA, APP_NAME, APP_ADDRESS } from './constants';
+import { ALPHABET_DATA, NUMBER_DATA, COLOR_SHAPE_DATA, HIJAIYAH_DATA, ASMAUL_HUSNA_DATA, APP_ADDRESS } from './constants';
 import { Navigation } from './components/Navigation';
 import { LearningSection } from './components/LearningSection';
 import { StoryTime } from './components/StoryTime';
@@ -85,7 +85,7 @@ const App: React.FC = () => {
       
       <Navigation currentView={currentView} onNavigate={setCurrentView} score={totalScore} />
       
-      {/* UPDATE: Menggunakan w-full max-w-[95%] agar lebih lebar tapi tetap ada margin responsif */}
+      {/* UPDATE: Menggunakan w-full max-w-[95%] 2xl:max-w-screen-2xl mx-auto mt-6 px-4 pb-10 flex-grow relative z-10 */}
       <main className="w-full max-w-[95%] 2xl:max-w-screen-2xl mx-auto mt-6 px-4 pb-10 flex-grow relative z-10">
         {renderContent()}
       </main>
