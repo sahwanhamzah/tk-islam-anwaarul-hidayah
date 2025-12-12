@@ -1,0 +1,26 @@
+/* Custom Styles */
+/* Kita menghapus @tailwind base/components/utilities karena sudah diload via CDN di index.html */
+
+body {
+  background-color: #F0FDF4; /* bg-emerald-50 */
+  background-image: radial-gradient(#DCFCE7 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.islamic-pattern {
+  background-color: #ffffff;
+  opacity: 0.1;
+  background-image:  linear-gradient(135deg, #10b981 25%, transparent 25%), linear-gradient(225deg, #10b981 25%, transparent 25%), linear-gradient(45deg, #10b981 25%, transparent 25%), linear-gradient(315deg, #10b981 25%, transparent 25%);
+  background-position:  10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+/* Scrollbar Hide Utility */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
